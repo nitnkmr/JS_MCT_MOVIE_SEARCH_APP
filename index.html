@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&family=Inconsolata:wght@300;400&family=Montserrat:wght@100;200;300;400&family=Nunito:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="heading"><h3>Movie Search </h3></div>
+            <div class="navOption">
+                <ul>
+                    <li><a href="src.html">Search</a></li>
+                    <li><a href="#">Home</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="inputs">
+            <div class="inputComp">
+                <div class="comp1"><h1>Popular :</h1></div>
+                <div class="comp2">
+                    <select id="select" onchange="hello()">
+                        <option value="day">Today</option>
+                        <option value="week">This Week</option>
+                    </select>
+                </div>
+                <span class="comp3">
+                    <div class="buttons">
+                        <input label="Movies" type="radio" name="btn" id="movie" value="male" checked onclick="up()">
+                        <input label="Web-Series" type="radio" name="btn" id="series" value="female" onclick="down()">
+                    </div>
+                </span>
+            </div>
+        </div>
+        <div class="cardContainer" id="card2">
+            <div class="card">
+                <div class="circle">4.6</div>
+                <img src="https://image.tmdb.org/t/p/w154${e.poster_path}" alt="">
+                <div><h2>${e.name}</h2>
+                <p>Genere</p>
+                <h3>${e.first_air_date}</h3></div>
+                </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
