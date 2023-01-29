@@ -18,7 +18,7 @@
             <div class="navOption">
                 <ul>
                     <li><a href="src.html">Search</a></li>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="#" class="activate">Home</a></li>
                 </ul>
             </div>
         </div>
@@ -40,15 +40,18 @@
             </div>
         </div>
         <div class="cardContainer" id="card2">
-            <div class="card">
-                <div class="circle">4.6</div>
-                <img src="https://image.tmdb.org/t/p/w154${e.poster_path}" alt="">
-                <div><h2>${e.name}</h2>
-                <p>Genere</p>
-                <h3>${e.first_air_date}</h3></div>
-                </div>
-        </div>
+            <!-- <a href="innercard.html"> -->
+                <div class="card" id="innercard">
+                    <div class="circle">4.6</div>
+                    <!-- <img src="https://image.tmdb.org/t/p/w154${e.poster_path}" alt=""> -->
+                    <div><h2>${e.name}</h2>
+                    <p>Genere</p>
+                    <h3>${e.first_air_date}</h3></div>
+                    </div>
+            </div>
+            <!-- </a>w1280 -->
     </div>
     <script src="script.js"></script>
+    <!-- <script src="script2.js"></script> -->
 </body>
 </html>

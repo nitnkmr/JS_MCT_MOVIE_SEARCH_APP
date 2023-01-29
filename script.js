@@ -45,8 +45,8 @@ async function getMovie(e) {
   );
   const data = await res.json();
   data.results.map((e) => {
-    console.log(e);
     card.innerHTML += `
+    <a href="innercard.html" onclick="localSet1(${e.id})">
     <div class="card">
     <div class="circle">${(e.vote_average*10).toFixed(1)}<span>%</span></div>
     <img src="https://image.tmdb.org/t/p/w154${e.poster_path}" alt="">
@@ -55,6 +55,7 @@ async function getMovie(e) {
     <h3>${e.release_date}</h3></div>
     </div>
 </div>
+</a>
       `;
   });
 }
@@ -65,16 +66,28 @@ async function getSeries(el) {
   );
   const data = await res.json();
   data.results.map((e) => {
+
     card.innerHTML += `
+    <a href="innercard.html" onclick="localSet2(${e.id})">
     <div class="card">
-    <div class="circle"></div>
+    <div class="circle">${(e.vote_average*10).toFixed(1)}</div>
     <img src="https://image.tmdb.org/t/p/w154${e.poster_path}" alt="">
     <div><h2>${e.name}</h2>
     <p>Genere</p>
     <h3>${e.first_air_date}</h3></div>
     </div>
 </div>
+</a>
         `;
   });
 }
 getMovie("day");
+
+function localSet1(val){
+  localStorage.setItem("movieid", val);
+  console.log(val);
+}
+function localSet2(val){
+  localStorage.setItem("seriesid", val);
+  console.log(val);
+}
