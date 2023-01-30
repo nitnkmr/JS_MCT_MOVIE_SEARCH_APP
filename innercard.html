@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&family=Inconsolata:wght@300;400&family=Montserrat:wght@100;200;300;400&family=Nunito:wght@200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style3.css">
 </head>
 
@@ -13,7 +19,7 @@
     <div class="container">
         <div class="navbar">
             <div class="heading">
-                <h1>Movie Search </h1>
+                <h4>Movie Search </h4>
             </div>
             <div class="navOption">
                 <ul>
@@ -23,12 +29,40 @@
             </div>
         </div>
         <div id="imgsec">
+            <!-- <div class="imgsec1" style="background-image: url('https://image.tmdb.org/t/p/w1280${data.backdrop_path}')">
+                <div class="innerposter">
+                </div>
+                <div class="innerinfo">
+                    <div class="circle">${(data.vote_average*10).toFixed(1)}%</div>
+                    <div class="length">
+                        <p>${data.release_date}</p>
+                        <p>${data.runtime} mins</p>
+                         <p>EngLish</p>
+                        </div>
+                    <div class="title" >
+                        <div class="genere">Horror || Fantasy</div>
+                        <h2>${data.original_title}</h2>
+                    </div>
+                </div>
+                
+            </div> -->
         </div>
         <div class="plot" id="plot">
-            
+            <h1>Go back And Reload Again..</h1>
+            <!-- <div class="plotleft">
+                <h1>Plot :</h1>
+                <p>${data.overview}</p>
+            </div>       
+            <div id="casting">
+                <div class="castcard">
+                    <img src="" alt="img">
+                    <h3>name</h3>
+                </div>
+            </div>        -->
         </div>
 
     </div>
+    
     <script src="script2.js"></script>
 
 </body>

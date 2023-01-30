@@ -84,8 +84,7 @@
   background-image: linear-gradient(to right,#1f1f34,#4f4f7b,rgb(74, 74, 141));
   background-image: linear-gradient(to right,#1f1f34,#4f4f7b,rgb(74, 74, 141));
   min-height: 100%;
-  
-  height: fit-content;
+  height: 131%;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -95,7 +94,7 @@
 .card{
   height: 340px;
   width: 170px;
-  margin: 15px;
+  margin: 10px;
   color: aliceblue;
 }
 .card:hover{
@@ -103,7 +102,7 @@
   transition: .4s;
   height: 340px;
   width: 170px;
-  margin: 15px;
+  margin: 10px;
   color: aliceblue;
 }
 .poster img{

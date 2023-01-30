@@ -70,7 +70,7 @@ async function getSeries(el) {
     card.innerHTML += `
     <a href="innercard.html" onclick="localSet2(${e.id})">
     <div class="card">
-    <div class="circle">${(e.vote_average*10).toFixed(1)}</div>
+    <div class="circle">${(e.vote_average*10).toFixed(1)}<span>%</span></div>
     <img src="https://image.tmdb.org/t/p/w154${e.poster_path}" alt="">
     <div><h2>${e.name}</h2>
     <p>Genere</p>
@@ -85,9 +85,7 @@ getMovie("day");
 
 function localSet1(val){
   localStorage.setItem("movieid", val);
-  console.log(val);
 }
 function localSet2(val){
   localStorage.setItem("seriesid", val);
-  console.log(val);
 }
